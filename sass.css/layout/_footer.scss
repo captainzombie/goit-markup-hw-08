@@ -3,11 +3,56 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  text-align: center;
+  align-items: center;
+
    .container {
-      display: flex;
-}
+      
+      justify-content: center;
+      align-items: center;
+
+        @include desktop {
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+    
+          
+    
+    }
+    }
+
+  
 }
 
+.footer-wrap {
+      margin-bottom: 60px;
+    
+
+  @include desktop {
+    width: 400px;
+    text-align: left;
+  }
+
+  @include desktop {
+    width: 231px;
+    margin-bottom: 0;
+  }
+  
+}
+
+.address-join-wrap {
+   @include tablet {
+    width: 738px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    display: flex;
+    width: 489px;
+    
+  }
+}
 
 
 .address {
@@ -21,7 +66,11 @@
 }
 
 .footer-soc {
-  margin-left: 70px;
+  
+  margin-bottom: 60px;
+  @include desktop {
+    margin-left: 70px;
+  }
 }
 
 .footer__item {
@@ -30,6 +79,7 @@
 
 .footer-icon-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-icon__item {
@@ -69,6 +119,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .contacts__link--footer {
@@ -91,17 +144,31 @@
 
 
 .email-form {
-  display: flex;
+  @include desktop {
+     display: flex;
+  }
+ 
+
 }
 
 .email-list-wrap {
-  margin-left: 93px;
+  @include desktop {
+    margin-left: 93px;
+  }
+  
+
 }
 
 .email-form-wrap {
   display: flex;
-  align-items: center;
-}
+      @include tablet {
+    justify-content: center;
+   }
+   
+
+
+  }
+  
 
 .email-list__label {
   font-weight: 700;
@@ -111,6 +178,10 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @include desktop{
+    text-align: left;
+  }
+  
 }
 
 .email-list__btn {
@@ -129,8 +200,12 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-left: 12px;
+  margin: 0 auto;
   padding: 10px 29px;
+  
+  @include desktop {
+    margin-left: 12px;
+  }
 }
 
 .email-list__icon {
@@ -141,10 +216,16 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
+  // width: 358px;
+  width: 290px;
   background: #2f303a;
   color: #ffffff;
   height: 50px;
-  min-width: 358px;
+  // min-width: 358px;
   padding-left: 16px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    width: 450px;
+  }
 }

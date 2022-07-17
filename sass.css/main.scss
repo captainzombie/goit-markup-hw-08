@@ -1,3 +1,7 @@
+@import './utils/vars';
+@import './utils/hidden';
+@import './utils/mixins';
+
 @import './base/common';
 @import './base/reset';
 
@@ -15,8 +19,3 @@
 @import './layout/work';
 @import './layout/examples';
 @import './layout/footer';
-
-
-
-@import './utils/vars';
-@import './utils/hidden';

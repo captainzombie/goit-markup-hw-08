@@ -1,6 +1,23 @@
 .team-list {
-  display: flex;
   gap: 30px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.team-pre-title {
+font-weight: 700;
+font-size: 28px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
 }
 
 .team-content {
@@ -13,6 +30,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
+ 
+
+  @include tablet {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @include desktop {
+
+  }
 }
 
 .team {

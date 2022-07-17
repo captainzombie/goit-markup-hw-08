@@ -1,16 +1,37 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
   align-items: center;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-item {
-  width: 170px;
+  width: calc((100% - 30px)/2);
   height: 92px;
-  margin-left: 30px;
+
+  @include tablet {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @include desktop {
+    margin-left: 30px;
     &:first-child {
       margin-left: 0;
     }
+  }
+  
+  
 }
 
 

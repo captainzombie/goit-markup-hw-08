@@ -1,4 +1,12 @@
-
+.work {
+  display: none;
+  
+  @include desktop {
+    display:block;
+    margin-bottom: 94px;
+    margin-top: 94px;
+  }
+}
 
 .work-top-wrap {
   position: relative;

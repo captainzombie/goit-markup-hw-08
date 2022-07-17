@@ -20,11 +20,11 @@
       rel="stylesheet"
     />
     <title>WEB-Studio</title>
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+     <header class="header">
       <div class="container">
         <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
         <nav class="nav">
@@ -53,65 +53,63 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> 
 
     <!-- Main content -->
     <main>
-      <section class="hero">
+       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section> 
 
       <!-- Преимущества -->
       <section class="benefits">
         <div class="container">
           <ul class="benefits-icon__list list">
             <li class="benefits-icon__item">
-              <svg width="70" height="70">
-                <use href="./images/icons.svg#icon-Group"></use>
+              <div class="benefits-icon-wrap">
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-Group"></use>
               </svg>
+              </div>
+                <h3 class="benefits__title title">Внимание к деталям</h3>
+                  <p class="benefits__text">
+                  Идейные соображения, а также начало повседневной работы по формированию позиции.
+                  </p>
             </li>
             <li class="benefits-icon__item">
-              <svg width="70" height="70">
-                <use href="./images/icons.svg#icon-clock-1"></use>
+              <div class="benefits-icon-wrap">
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-clock-1"></use>
               </svg>
-            </li>
-            <li class="benefits-icon__item">
-              <svg width="70" height="70">
-                <use href="./images/icons.svg#icon-diagram-1"></use>
-              </svg>
-            </li>
-            <li class="benefits-icon__item">
-              <svg width="70" height="70">
-                <use href="./images/icons.svg#icon-astronaut-1"></use>
-              </svg>
-            </li>
-          </ul>
-          <ul class="benefits__list list">
-            <li class="benefits__item">
-              <h3 class="benefits__title title">Внимание к деталям</h3>
-              <p class="benefits__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
-            </li>
-            <li class="benefits__item">
-              <h3 class="benefits__title title">Пунктуальность</h3>
-              <p class="benefits__text">
+              </div>
+                  <h3 class="benefits__title title">Пунктуальность</h3>
+                    <p class="benefits__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits__item">
-              <h3 class="benefits__title title">Планирование</h3>
-              <p class="benefits__text">
+            <li class="benefits-icon__item">
+              <div class="benefits-icon-wrap">
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-diagram-1"></use>
+              </svg>
+              </div>
+                <h3 class="benefits__title title">Планирование</h3>
+                 <p class="benefits__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="benefits__item">
-              <h3 class="benefits__title title">Современные технологии</h3>
-              <p class="benefits__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            <li class="benefits-icon__item">
+              <div class="benefits-icon-wrap">
+                  <svg width="70" height="70">
+                   <use href="./images/icons.svg#icon-astronaut-1"></use>
+              </svg>
+              </div>  
+                <h3 class="benefits__title title">Современные технологии</h3>
+                  <p class="benefits__text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий. 
               </p>
             </li>
           </ul>
@@ -119,8 +117,8 @@
       </section>
 
       <!-- Чем занимаемся -->
-      <section class="section">
-        <div class="container">
+       <section class="work">
+        <div class="container work">
           <h2 class="pre-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work__item">
@@ -145,12 +143,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
 
       <!-- Наша команда -->
-      <section class="team section">
+       <section class="team section">
         <div class="container">
-          <h2 class="pre-title">Наша команда</h2>
+          <h2 class="team-pre-title pre-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img src="./images/img.jpg" alt="фото" width="270" />
@@ -304,7 +302,7 @@
         </div>
       </section>
       <!-- Клиенты -->
-      <section class="clients section">
+       <section class="clients">
         <div class="container">
           <h2 class="pre-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -356,9 +354,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+     <footer class="footer">
       <div class="container">
-        <div>
+        <div class="address-join-wrap">
+            <div class="footer-wrap">
           <a href="#" class="logo">Web<span class="logo-footer">Studio</span></a>
           <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
           <ul class="footer__list list">
@@ -406,6 +405,8 @@
             </li>
           </ul>
         </div>
+        </div>
+        
         <div class="email-list-wrap">
           <p class="email-list__label">Подпишитесь на рассылку</p>
           <div class="email-form-wrap">
@@ -421,7 +422,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
 
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
@@ -490,12 +491,9 @@
               <a href="#" class="offer-terms-link">Условия договора</a>
             </label>
           </div>
-
- 
         </form>
 
-            <button type="submit" class="modal-submit">Отправить</button>
-
+        <button type="submit" class="modal-submit">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
