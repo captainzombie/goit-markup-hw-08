@@ -9,14 +9,16 @@
 }
 
 
-
 .modal {
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
+  width: calc(100% - 30px);
+  height: 85%;
+  max-height: 609px;
+  overflow-y: scroll;
   left: 50%;
   top: 50%;
+  opacity: 1;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,6 +27,13 @@
   padding: 40px;
   .backdrop.is-hidden & {
   transform: translate(-50%, -50%) scale(0);
+}
+
+@include desktop {
+  position: absolute;
+  overflow-y: auto;
+  width: 528px;
+  height: 581px;
 }
 }
 

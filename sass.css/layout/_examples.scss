@@ -27,7 +27,7 @@
 
 .filter-list {
   display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     flex-wrap: wrap;
     gap: 15px 8px;
 
@@ -35,9 +35,6 @@
        justify-content: center;
     }
 
-    @include desktop {
-
-    }
     
 }
 
@@ -87,9 +84,9 @@
 }
 
 .examples-item {
-  width: 450px;
   @include tablet {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 2);
+    
   }
 
   @include desktop {

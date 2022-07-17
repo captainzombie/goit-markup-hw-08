@@ -10,8 +10,7 @@
 
 .hero {
   background-color: #2f303a;
-  max-width: 480px;
-  // height: 600px;
+  max-width: 1600px;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -39,8 +38,7 @@
   }
 
   @include desktop {
-    max-width: 1600px;
-    height: 600px;
+    // height: 600px;
     padding-top: 90px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -51,16 +49,14 @@
         url(../index-hw8/hero/header-2x.jpg);
     }
   }
- 
 }
 
 .hero-title {
-  
   width: 290px;
   margin: 0 auto 30px;
   text-align: center;
   align-items: center;
-  padding-top: 118px;
+  padding-top: 50px;
   font-weight: 900;
   font-size: 18px;
   line-height: 1.62;
@@ -93,7 +89,3 @@
     background-color: var(--hover-color);
   }
 }
-
-
-
-

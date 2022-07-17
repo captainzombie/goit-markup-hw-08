@@ -1,10 +1,19 @@
 body {
+  position: relative;
   background-color: #ffffff;
   font-family: var(--main-font);
   color: var(--main-title-color);
 }
 
+body.is-open {
+  overflow: hidden;
+}
+
 .list {
+  list-style: none;
+}
+
+%list {
   list-style: none;
 }
 
@@ -15,4 +24,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+%link {
+  text-decoration: none;
+  // transition: color, 250ms var(--time-function);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
 }
