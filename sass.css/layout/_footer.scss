@@ -153,6 +153,8 @@
 
 .email-list-wrap {
   @include desktop {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 93px;
   }
   

@@ -124,7 +124,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%) scale(1);
   width: calc(100% - 30px);
   height: 85%;
@@ -451,6 +451,7 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 0;
     height: 100%;
     background-color: transparent;
     pointer-events: all;
@@ -607,6 +608,58 @@ img {
   .contacts__link {
     display: flex;
     align-items: center;
+  }
+}
+
+.contacts__link--phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .contacts__link--phone {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link--phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+.contacts__link--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .contacts__link--mail {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link--mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: #757575;
   }
 }
 
@@ -806,7 +859,6 @@ img {
   flex-wrap: wrap;
   width: 100%;
   border-radius: 2%;
-  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .benefits-icon__item {
@@ -823,7 +875,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
 }
 
 .benefits-icon-wrap {
@@ -1101,6 +1152,7 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .examples-list {
@@ -1284,6 +1336,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .email-list-wrap {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 93px;
   }
 }
