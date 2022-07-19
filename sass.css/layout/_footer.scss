@@ -30,12 +30,13 @@
 
   @include desktop {
     width: 400px;
-    text-align: left;
+    
   }
 
   @include desktop {
-    width: 231px;
+    min-width: 231px;
     margin-bottom: 0;
+    text-align: left;
   }
   
 }
@@ -218,7 +219,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  // width: 358px;
+  
   width: 290px;
   background: #2f303a;
   color: #ffffff;
@@ -229,5 +230,9 @@
 
   @include tablet {
     width: 450px;
+  }
+
+  @include desktop {
+    width: 358px;
   }
 }

@@ -1,6 +1,6 @@
 .benefits {
-  padding-top: 94px;
-  margin-bottom: 94px;
+  // padding-top: 94px;
+  // margin-bottom: 94px;
 }
 
 .benefits__title {
@@ -10,7 +10,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
- 
+  text-align: center;
     @include mobile {
       text-align: center;
   }
@@ -29,27 +29,41 @@
 
 
 .benefits-icon__item {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 2%;
+    width: 100%;
   
 
   @include tablet {
     width: calc((100% - 60px) / 2);
- 
+      display: flex;
+  flex-wrap: wrap;
+
+  border-radius: 2%;
   }
 
   @include desktop {
     width: calc((100% - 90px)/4);
+      display: flex;
+  flex-wrap: wrap;
+  
+  border-radius: 2%;
   }
  
   }
 
 .benefits-icon__list {
-  display: flex;
+
+  @include tablet {
+     display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  }
+
+  @include desktop{
+       display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+ 
   
 }
 

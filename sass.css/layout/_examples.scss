@@ -1,5 +1,22 @@
+
+.examples .container {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// 
+}
+
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+     @include tablet {
+       justify-content: center;
+       margin-bottom: 14px;
+    }
+
+    @include desktop {
+      margin-bottom: 60px;
+    }
+
 }
 
 .filter-btn {
@@ -27,7 +44,7 @@
 
 .filter-list {
   display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
     gap: 15px 8px;
 
@@ -38,9 +55,9 @@
     
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 8px;
-}
+// .filter-item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 /*---------work-examples---------*/
 
@@ -81,10 +98,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .examples-item {
+  width: 100%;
+
   @include tablet {
     width: calc((100% - 60px) / 2);
     

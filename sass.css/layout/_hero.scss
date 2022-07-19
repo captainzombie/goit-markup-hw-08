@@ -2,7 +2,7 @@
   justify-content: center;
   align-items: center;
   max-width: 480px;
-  height: 400px;
+  // height: 400px;
   @include desktop {
     max-width: 1200px;
   }
@@ -18,7 +18,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: auto;
+  padding: 118px 0;
+  // margin: auto;
+ 
 
   // Mobile
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -28,6 +30,9 @@
 
   // Tablet
   @include tablet {
+
+    padding-top: 118px;
+
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../index-hw8/hero/header-tablet.jpg);
 
@@ -35,11 +40,13 @@
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../index-hw8/hero/header-tablet-2x.jpg);
     }
+
   }
 
   @include desktop {
-    // height: 600px;
-    padding-top: 90px;
+    height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../index-hw8/hero/header.jpg);
@@ -52,19 +59,25 @@
 }
 
 .hero-title {
-  width: 290px;
+  max-width: 360px;
   margin: 0 auto 30px;
   text-align: center;
   align-items: center;
-  padding-top: 50px;
   font-weight: 900;
   font-size: 18px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
+
+  @include tablet {
+    max-width: 360px;
+    font-size: 26px;
+    color: #FFFFFF;
+  }
+
   @include desktop {
-    width: 696px;
+    min-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
