@@ -30,13 +30,17 @@
 
 .benefits-icon__item {
     width: 100%;
+    margin-bottom: 30px;
+    @include mobile {
+      margin-bottom: 30px;
+    }
   
 
   @include tablet {
     width: calc((100% - 60px) / 2);
       display: flex;
   flex-wrap: wrap;
-
+  margin-bottom: 0;
   border-radius: 2%;
   }
 
@@ -44,7 +48,7 @@
     width: calc((100% - 90px)/4);
       display: flex;
   flex-wrap: wrap;
-  
+  margin-bottom: 0;
   border-radius: 2%;
   }
  

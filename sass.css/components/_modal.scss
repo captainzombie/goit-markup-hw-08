@@ -17,7 +17,7 @@
   // height: 85%;
     // min-width: 288px;
     // max-width: 450px;
-  max-height: 550px;
+  max-height:450px;
   overflow-y: scroll;
   left: 50%;
   top: 50%;
@@ -32,11 +32,11 @@
   transform: translate(-50%, -50%) scale(0);
 }
 
-// @include mobile {
-//   // min-width: 450px;
+@include mobile {
+  min-width: 450px;
   width: 98wh;
-//   // z-index: 5;
-// }
+  // z-index: 5;
+}
 
 @include tablet {
   max-width: 450px;

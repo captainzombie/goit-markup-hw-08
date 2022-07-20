@@ -139,7 +139,7 @@ img {
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
   z-index: 10;
-  max-height: 550px;
+  max-height: 450px;
   overflow-y: scroll;
   left: 50%;
   top: 50%;
@@ -149,10 +149,15 @@ img {
   border-radius: 4px;
   transition: transform 500ms linear;
   padding: 40px;
-  width: 98wh;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    width: 98wh;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -367,7 +372,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .pre-title {
@@ -378,6 +383,7 @@ img {
   .pre-title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -793,7 +799,6 @@ img {
 
 .hero {
   background-color: #2f303a;
-  max-width: 1600px;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-gb.png);
@@ -903,12 +908,19 @@ img {
 
 .benefits-icon__item {
   width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .benefits-icon__item {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits-icon__item {
     width: calc((100% - 60px) / 2);
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
     border-radius: 2%;
   }
 }
@@ -917,6 +929,7 @@ img {
     width: calc((100% - 90px) / 4);
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
     border-radius: 2%;
   }
 }
@@ -1037,6 +1050,12 @@ img {
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
