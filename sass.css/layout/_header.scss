@@ -26,6 +26,10 @@
   &:focus {
     fill: #2196f3;
   }
+  
+  // @include mobile {
+  //   z-index: 3;
+  // }
 
   @include tablet {
     display: none;

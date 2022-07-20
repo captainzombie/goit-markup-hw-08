@@ -139,6 +139,7 @@ img {
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
   z-index: 10;
+  max-height: 550px;
   overflow-y: scroll;
   left: 50%;
   top: 50%;
@@ -148,15 +149,10 @@ img {
   border-radius: 4px;
   transition: transform 500ms linear;
   padding: 40px;
+  width: 98wh;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-}
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 98wh;
-    z-index: 5;
-  }
 }
 @media screen and (min-width: 768px) {
   .modal {
