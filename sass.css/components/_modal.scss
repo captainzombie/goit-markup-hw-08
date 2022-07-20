@@ -76,11 +76,20 @@
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    line-height: calc(23px / 20px);
+    font-size: 20px;
+  }
 }
 
 .modal-field {
