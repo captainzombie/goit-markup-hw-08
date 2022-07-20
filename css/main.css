@@ -136,9 +136,10 @@ img {
 }
 
 .modal {
-  position: fixed;
+  position: absolute;
   transform: translate(-50%, -50%) scale(1);
-  overflow-y: auto;
+  z-index: 10;
+  overflow-y: scroll;
   left: 50%;
   top: 50%;
   opacity: 1;
@@ -153,7 +154,8 @@ img {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    min-width: 450px;
+    width: 98wh;
+    z-index: 5;
   }
 }
 @media screen and (min-width: 768px) {
